@@ -35,4 +35,4 @@ jobs:
           environment: GEN_2
           allow_unauthenticated: true
           # Dynamically bind your SendGrid Secret Key to the environment
-          env_vars: SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}
+          environment_variables: SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}
