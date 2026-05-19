@@ -17,3 +17,7 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+# GCP Credentials
+gcp-sa-key.json
+

@@ -77,6 +77,7 @@ exports.contactForm = async (req, res) => {
   const emailPayload = {
     to: 'naveen.h760@gmail.com',         // Your verified destination inbox
     from: 'contact@naveenh.in',          // Your SendGrid verified sender identity
+    replyTo: email.trim(),               // Directly reply to the client who filled the form!
     subject: `New Lead: ${subject.trim()}`,
     text: `You have received a new message from your website contact form.\n\n` +
           `----------------------------------------\n` +
